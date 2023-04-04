@@ -7,19 +7,3 @@ const returnFirstTwoDrivers = function () {
 const returnLastTwoDrivers = function (drivers) {
   console.log([drivers[2], drivers[3]]);
 };
-
-function selectingDrivers() {
-  return [returnFirstTwoDrivers, returnLastTwoDrivers];
-}
-
-const createFareMultiplier = function (multiplyValue, value) {
-  return multiplyValue * value;
-};
-
-const fareDoubler = createFareMultiplier(2);
-
-const fareTripler = createFareMultiplier(3);
-
-const selectDifferentDrivers = function (drivers, driversToReturn) {
-  return driversToReturn(drivers);
-};
